@@ -1,0 +1,292 @@
+html {
+    font-size: 100%;
+  }
+
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    width: 98%;
+    margin: auto;
+  }
+
+/*Header*/
+
+header, .head{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.head {
+    flex: auto;
+}
+
+.head img{
+  margin-left: 35px;
+}
+
+/*Barre de navigation */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: normal;
+  margin-right: 28px;
+}
+
+nav ul {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+  padding: 0 20px;
+  line-height: 40px;
+}
+
+.inscrire{
+  display: flex;
+  align-items: center;
+}
+
+.inscrire a {
+  color: blue;
+}
+
+a { 
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
+
+/*Recherche*/
+
+.search{
+  margin: 20px 40px;
+}
+
+h1, h2{
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.searchbar{
+  display: flex;
+  border: 1px solid #f2f2f2;
+  border-radius: 11px;
+  margin-top: 20px;
+  width: 318px;
+  justify-content: space-between;
+}
+
+i.fa-map-marker-alt {
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #777;
+  background-color: #eee;
+  border-radius: 10px 0 0 10px;
+  
+}
+
+input{
+  display: block;
+  padding-left: 10px;
+  border: none;
+  font-weight: bold;
+}
+
+button{
+  padding: 0 15px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #fff;
+  background: #0065fc;
+  border: none;
+  border-radius: 0 10px 10px 0;
+}
+
+i.fa-search {
+  display: none;
+}
+
+/*Filtres */
+
+.filtres {
+  display: flex;
+  margin : 20px;
+  flex-wrap: revert;
+  align-items: center;
+
+}
+
+.filtres p {
+  margin: 8px -20px 0 20px;
+  align-items: center;
+}
+
+.filtres ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.filtres li {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.filtres i {
+  height: 30px;
+  width: 40px;
+  margin-right: 20px;
+  padding-top: 12px;
+  text-align: center;
+  background: #f2f2f2;
+  border-radius: 50%;
+}
+
+.filtres a{
+  text-decoration: none;
+  color: black;
+}
+
+i {
+  color: #0065fc;
+}
+
+i.fa-info {
+  height: 18px;
+  width: 20px;
+  margin-right: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+li:hover {
+  background-color: #0065fc;
+}
+
+p{
+  font-size: 80%;
+}
+
+/* hebergement marseille + populaires = popmarseille */
+.popmarseille{ 
+  display: flex;
+  justify-content: space-between;
+}
+
+main .popmarseille{
+  margin-top: 20px;
+}
+
+#hebergements{
+  max-width: 780px;
+  border-radius: 10px;
+  background: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.hebergements{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hebergements .cases {
+  padding: 8px;
+  background: #fff;
+}
+
+.cases {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #999;
+}
+
+.hebergements img{
+  height: 100%;
+  width: 200px;
+  max-height: 90px;
+  border-radius: 10px 10px 0 0;
+  margin-left: 5px;
+}
+
+.details {
+  margin-left: 10px;
+}
+
+h3 {
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+i.no-star{ 
+  color: #ccc;
+}
+
+#hebergements p.plus {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/*Populaires */
+
+#populaires{
+  width: 426px;
+  border-radius: 10px;
+  background: #f2f2f2;
+}
+
+#populaires h2{
+display: inline-block;
+width: 80%;
+margin-left: 30px;
+}
+
+.populaires{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.populaires .cases{
+  width: 281px;
+  padding: 5px;
+  background: #fff;
+
+}
+
+.populaires img{
+  height: 110px;
+  width: 100%;
+  max-width: 100px;
+  border-radius: 10px 0 0 10px;
+}
+
+.populaires .details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
