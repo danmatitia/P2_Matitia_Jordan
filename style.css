@@ -14,7 +14,14 @@ body {
     font-family: "Raleway", sans-serif;
     width: 98%;
     margin: auto;
+    margin-top: 50px;
   }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}  
 
 /*Header*/
 
@@ -69,6 +76,11 @@ nav li {
 a { 
   text-decoration: none;
   color: black;
+}
+
+.bg {
+  text-decoration: none;
+  color: black;
   display: flex;
 }
 
@@ -80,7 +92,6 @@ a {
 
 h1, h2{
   margin-bottom: 20px;
-  margin-left: 20px;
 }
 
 .searchbar{
@@ -134,7 +145,7 @@ i.fa-search {
 }
 
 .filtres p {
-  margin: 8px -20px 0 20px;
+  margin: 8px 20px 0 20px;
   align-items: center;
 }
 
@@ -176,6 +187,7 @@ i.fa-info {
   height: 18px;
   width: 20px;
   margin-right: 10px;
+  margin-left: 37px;
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 50%;
@@ -199,11 +211,14 @@ main .popmarseille{
   margin-top: 20px;
 }
 
+/*hébergements */
+
 #hebergements{
   max-width: 780px;
   border-radius: 10px;
   background: #f2f2f2;
   box-sizing: border-box;
+  padding: 20px;
 }
 
 .hebergements{
@@ -247,6 +262,7 @@ i.no-star{
 #hebergements p.plus {
   font-weight: bold;
   margin-left: 20px;
+  margin-top: 30px;
 }
 
 /*Populaires */
@@ -255,6 +271,8 @@ i.no-star{
   width: 426px;
   border-radius: 10px;
   background: #f2f2f2;
+  padding: 20px;
+  margin-left: 20px;
 }
 
 #populaires h2{
@@ -289,4 +307,111 @@ margin-left: 30px;
   justify-content: space-between;
   padding-right: 15px;
   box-sizing: border-box;
+}
+
+/*Activités*/ 
+
+#activites {
+  margin-top: 40px;
+}
+
+.activites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.activites img {
+  height: 86%;
+  width: 260px;
+  border-radius: 10px 10px 0 0;
+}
+
+.activites h3 {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.vignette1 {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #999;
+}
+
+.vignette2 {
+  margin-bottom: 23px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #999;
+}
+
+.vignette3 {
+  margin-bottom: 28px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #999;
+}
+.vignette4 {
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #999;
+  margin-bottom: 20px;
+}
+.vignette5 {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #999;
+}
+
+.activites .double {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.activites .vignette2 img {
+  max-height: 134px;
+ 
+}
+.activites .vignette3 img {
+  max-height: 107px;
+}
+
+.activites .vignette5 img {
+  max-height: 114px;
+}
+
+.activites .vignette6 img {
+  max-height: 126px;
+  
+}
+
+
+/*Footer*/
+
+footer {
+  margin-top: 40px;
+  padding-top: 40px;
+  background: #f2f2f2;
+}
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+main, .footer {
+  max-width: 1170px;
+  margin: auto;
+}
+footer h3 {
+  margin-bottom: 15px;
+}
+footer ul {
+  width: 340px;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+footer li {
+  line-height: 20px;
 }
