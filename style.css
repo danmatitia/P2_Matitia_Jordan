@@ -211,14 +211,15 @@ i.fas.fa-map-marker-alt {
 
 @media screen and (max-width: 375px) {
   .search form button {
-    width: 163px;
+    width: 150px;
     border-radius: 1rem 1rem 1rem 1rem;
     color: #0065fc;
     padding-top: 51px;
+    display: flex;
   }
   i.fas.fa-search {
     color: white;
-    padding-left: 15px;
+    padding-left: 51px;
   }
   .search form {
     margin-left: 70px;
