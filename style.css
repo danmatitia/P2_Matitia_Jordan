@@ -1,12 +1,12 @@
 /*maquette desktop*/
 
 html {
-  font-family: 'Raleway', sans-serif;
-  }
+  font-family: "Raleway", sans-serif;
+}
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('../fonts/Raleway.ttf') format('truetype');
+  font-family: "Raleway";
+  src: url("../fonts/Raleway.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,24 +16,24 @@ body {
   width: 100%;
   margin: auto;
   margin-top: 50px;
-  }
+}
 
 /* responsive tablette*/
-@media screen and (max-width: 768px){
-  body{
+@media screen and (max-width: 768px) {
+  body {
     width: 135%;
     font-size: 17px;
     height: 215rem;
   }
-}  
+}
 
-  /*responsive mobile */
+/*responsive mobile */
 @media screen and (max-width: 375px) {
-  html{
+  html {
     width: 1100px;
     font-size: 45px;
   }
-  body{
+  body {
     width: 1087px;
     height: 270rem;
     font-size: 44px;
@@ -48,7 +48,7 @@ body {
   margin: auto;
 }
 
-.header img{
+.header img {
   margin-left: 5px;
 }
 
@@ -79,8 +79,8 @@ ul {
 }
 
 .header nav a[data-active="true"] {
-  border-top: 3px solid #0065FC;
-  color: #0065FC;
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
 }
 a {
   color: inherit;
@@ -92,76 +92,74 @@ a {
 }
 
 #headerSignup a {
-  color: #0065FC;
+  color: #0065fc;
   font-weight: 700;
 }
 
 /*Media queries tablette*/
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
   .header img {
-      margin-left: 10px;
+    margin-left: 10px;
   }
   .header {
     margin-left: 30px;
   }
 }
 
-
 /* responsive mobile header */
 
 @media screen and (max-width: 375px) {
   .header {
-  grid-template-columns: auto 1fr auto;
-  grid-template-areas:
-    "logo . button"
-    "navbar navbar navbar";
-  position: relative;
-  width: 480px;
-  max-width: 480px;
-  font-size: 66px;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "logo . button"
+      "navbar navbar navbar";
+    position: relative;
+    width: 480px;
+    max-width: 480px;
+    font-size: 66px;
   }
-  .header nav{
+  .header nav {
     width: 1137px;
     margin-top: 90px;
   }
   .header nav a {
-      display: inline-block;
-      border-bottom: 3px #f2f2f2 solid;
-      width: 100%;
+    display: inline-block;
+    border-bottom: 3px #f2f2f2 solid;
+    width: 100%;
   }
-  .header nav a[data-active=true] {
-      border-bottom: 3px #0065FC solid;
-      border-top: none;
+  .header nav a[data-active="true"] {
+    border-bottom: 3px #0065fc solid;
+    border-top: none;
   }
   #headerSignup {
-      position: absolute;
-      top: 0;
-      right: -495px;
-      padding: 31px;
-      border-bottom: none;
+    position: absolute;
+    top: 0;
+    right: -495px;
+    padding: 31px;
+    border-bottom: none;
   }
   #headerSignup a {
-      border-bottom: none;
+    border-bottom: none;
   }
-  .header ul{
+  .header ul {
     margin-right: 20px;
   }
-  .header li{
+  .header li {
     width: 50%;
     padding: 0;
   }
 
-  .header img{
+  .header img {
     margin-left: 40px;
     width: 340px;
   }
-
-  }
+}
 
 /* barre de Recherche*/
 
-.search{
- padding: 0 41px;
+.search {
+  padding: 0 41px;
 }
 
 .search form {
@@ -170,12 +168,13 @@ a {
   overflow: auto;
 }
 
-h1, h2{
+h1,
+h2 {
   margin-bottom: 20px;
 }
 
 .searchFormWrapIcon {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 1rem 1.25rem;
   border-radius: 1rem 0 0 1rem;
   text-align: center;
@@ -183,17 +182,17 @@ h1, h2{
 .search form input {
   border-right: none;
   border-left: none;
-  border-top: #F2F2F2 1px solid;
-  border-bottom: #F2F2F2 1px solid;
+  border-top: #f2f2f2 1px solid;
+  border-bottom: #f2f2f2 1px solid;
   padding: 0 1.5rem;
   width: 14rem;
   font-size: 1rem;
   font-weight: bold;
-  font-family: "Raleway","Sans serif";
+  font-family: "Raleway", "Sans serif";
 }
 
 .search form button {
-  background-color: #0065FC;
+  background-color: #0065fc;
   color: white;
   font-weight: bold;
   border: none;
@@ -204,30 +203,28 @@ h1, h2{
   padding-left: 0.5px;
   padding-right: 15px;
 }
-i.fas.fa-map-marker-alt{
-  color: black; 
+i.fas.fa-map-marker-alt {
+  color: black;
 }
-
 
 /* responsive mobile barre de recherche */
 
-@media screen and (max-width: 375px){
-
+@media screen and (max-width: 375px) {
   .search form button {
-      width: 163px;
-      border-radius: 1rem 1rem 1rem 1rem;
-      color: #0065FC;
-      padding-top: 51px;
+    width: 163px;
+    border-radius: 1rem 1rem 1rem 1rem;
+    color: #0065fc;
+    padding-top: 51px;
   }
   i.fas.fa-search {
     color: white;
     padding-left: 15px;
   }
-  .search form{
+  .search form {
     margin-left: 70px;
     margin-top: 50px;
   }
-  .search form{
+  .search form {
     overflow: hidden;
   }
 }
@@ -236,7 +233,7 @@ i.fas.fa-map-marker-alt{
 
 .filtres {
   display: flex;
-  margin : 20px;
+  margin: 20px;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
@@ -270,17 +267,17 @@ i.fas.fa-map-marker-alt{
   margin-right: 20px;
   padding-top: 15px;
   text-align: center;
-  background: #DEEBFF;
+  background: #deebff;
   border-radius: 50%;
 }
 
-.filtres a{
+.filtres a {
   text-decoration: none;
   color: black;
 }
 
 i {
-  color: #0065FC;
+  color: #0065fc;
 }
 
 i.fa-info {
@@ -295,28 +292,28 @@ i.fa-info {
 }
 
 li:hover {
-  background-color: #DEEBFF;
+  background-color: #deebff;
 }
 
-p{
+p {
   font-size: 90%;
 }
 
 /* responsive tablette filtres */
-@media screen and (max-width: 768px){
-  .filtres{
+@media screen and (max-width: 768px) {
+  .filtres {
     margin-left: 47px;
   }
-  .gros i.fa-info{
+  .gros i.fa-info {
     width: 29px;
     height: 23px;
   }
-} 
+}
 
 /*responsive mobile filtres */
 
 @media screen and (max-width: 375px) {
-  .filtres{
+  .filtres {
     gap: 0;
     margin-left: 20px;
     margin-right: -2px;
@@ -327,34 +324,33 @@ p{
     margin-right: 51px;
     padding-top: 30px;
   }
-  .filtres li{
+  .filtres li {
     border-radius: 60px;
     border: 2px solid #ccc;
     margin-right: 20px;
     padding-right: 77px;
   }
-  .filtres h2{
+  .filtres h2 {
     margin-left: 63px;
   }
-  .gros{
+  .gros {
     font-size: 56px;
     margin-left: 33px;
   }
-  .gros i.fa-info{
-  width: 71px;
-  height: 73px;
+  .gros i.fa-info {
+    width: 71px;
+    height: 73px;
   }
 }
- 
 
 /* hebergement marseille + populaires = popmarseille */
-.popmarseille{ 
+.popmarseille {
   display: flex;
   justify-content: space-between;
   padding: 5px;
 }
 
-main .popmarseille{
+main .popmarseille {
   margin-top: 20px;
 }
 
@@ -364,21 +360,21 @@ main .popmarseille{
   .popmarseille {
     display: block;
   }
-} 
+}
 /*responsive mobile popmarseille */
 
 @media screen and (max-width: 375px) {
-  .popmarseille{
+  .popmarseille {
     flex-direction: column-reverse;
     width: 100%;
     display: flex;
     margin-left: 95px;
   }
-} 
+}
 
 /*hébergements */
 
-#hebergements{
+#hebergements {
   max-width: 780px;
   border-radius: 10px;
   background: #f2f2f2;
@@ -386,11 +382,11 @@ main .popmarseille{
   padding: 13px;
   margin-right: 15px;
 }
-#hebergements h2{
+#hebergements h2 {
   margin-left: 12px;
 }
 
-.hebergements{
+.hebergements {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -407,7 +403,7 @@ main .popmarseille{
   box-shadow: 3px 3px 5px #999;
 }
 
-.hebergements img{
+.hebergements img {
   height: 100%;
   width: 200px;
   max-height: 90px;
@@ -425,7 +421,7 @@ h3 {
   font-size: 13px;
 }
 
-i.no-star{ 
+i.no-star {
   color: #ccc;
 }
 
@@ -441,7 +437,7 @@ i.no-star{
   #hebergements {
     margin-left: 114px;
   }
-} 
+}
 
 /* responsive mobile hebergements */
 
@@ -453,16 +449,16 @@ i.no-star{
     margin-left: -26px;
     background: none;
   }
-  #hebergement h2{
+  #hebergement h2 {
     margin-left: 12px;
     width: 833px;
     margin-bottom: 60px;
   }
-  .hebergements{
+  .hebergements {
     margin-top: 50px;
     flex-direction: column;
   }
-  .hebergements .cases{
+  .hebergements .cases {
     height: 550px;
     width: 905px;
     margin-left: 70px;
@@ -474,17 +470,17 @@ i.no-star{
     max-height: 292px;
     border-radius: 50px 50px 0 0;
   }
-  .cases .details h3{
+  .cases .details h3 {
     font-size: 38px;
   }
-  #hebergements p.plus{
+  #hebergements p.plus {
     font-size: 44px;
   }
-} 
+}
 
 /*Populaires */
 
-#populaires{
+#populaires {
   width: 426px;
   border-radius: 10px;
   background: #f2f2f2;
@@ -492,44 +488,43 @@ i.no-star{
   margin-left: 20px;
 }
 
-#populaires h2{
-display: inline-block;
-width: 80%;
+#populaires h2 {
+  display: inline-block;
+  width: 80%;
 }
 
-i.fas.fa-chart-line{
+i.fas.fa-chart-line {
   color: black;
 }
 
-.populaires{
+.populaires {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.populaires .cases{
+.populaires .cases {
   width: 281px;
   padding: 5px;
   background: #fff;
-
 }
 
-.populaires img{
+.populaires img {
   height: 110px;
   width: 100%;
   max-width: 100px;
   border-radius: 10px 0 0 10px;
 }
 
-.populaires .details{
+.populaires .details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-right: 15px;
   box-sizing: border-box;
 }
-.bg{
-  display: flex ;
+.bg {
+  display: flex;
 }
 
 /*responsive tablette populaires */
@@ -539,25 +534,25 @@ i.fas.fa-chart-line{
     background: none;
     margin-left: 40px;
   }
-  #populaires h2{
+  #populaires h2 {
     max-width: 261px;
   }
-  .populaires{
+  .populaires {
     width: 933px;
     flex-flow: row;
   }
-  .populaires .cases{ 
+  .populaires .cases {
     margin-right: 20px;
   }
-  .populaires img{
+  .populaires img {
     height: 135px;
     object-fit: cover;
   }
-  i.fas.fa-chart-line{
+  i.fas.fa-chart-line {
     margin-top: 24px;
   }
-} 
-/*responsive Mobile populaires*/ 
+}
+/*responsive Mobile populaires*/
 @media screen and (max-width: 375px) {
   #populaires {
     flex-direction: column;
@@ -569,15 +564,15 @@ i.fas.fa-chart-line{
     border-radius: 0;
     background: #f2f2f2;
     width: 1053px;
-  } 
+  }
 
-  #populaires h2{
+  #populaires h2 {
     margin-left: 85px;
     max-width: fit-content;
     margin-right: 390px;
   }
-  .populaires{
-    display:flex;
+  .populaires {
+    display: flex;
     flex-direction: column;
     margin-left: 70px;
   }
@@ -597,15 +592,15 @@ i.fas.fa-chart-line{
     max-width: 437px;
     border-radius: 20px;
   }
-  .populaires .details{
+  .populaires .details {
     font-size: 40px;
     margin-top: 39px;
   }
-  .cases .details h3{
+  .cases .details h3 {
     font-size: 42px;
   }
 }
-/*Activités*/ 
+/*Activités*/
 
 #activites {
   margin-top: 40px;
@@ -613,12 +608,12 @@ i.fas.fa-chart-line{
 
 .activites {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
   column-gap: 2rem;
   margin: 4rem 0;
 }
-.activites h2{
+.activites h2 {
   grid-column: 1 / -1;
 }
 
@@ -633,18 +628,18 @@ i.fas.fa-chart-line{
   margin: 1.2rem 1.5rem;
 }
 
-.activites a{
-box-shadow: 0 0 20px #0000002e;
-border-radius: 1rem;
-overflow: hidden;
-display: flex;
-flex-direction: column;
-transition-duration: 0.1s;
+.activites a {
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.1s;
 }
 
 #un {
-    grid-row: 2/7;
-    grid-column: 1/2;
+  grid-row: 2/7;
+  grid-column: 1/2;
 }
 #deux {
   grid-column: 2/3;
@@ -681,27 +676,27 @@ transition-duration: 0.1s;
     margin-left: 60px;
     display: block;
   }
-  #un{
+  #un {
     height: 216px;
     margin-bottom: 20px;
   }
-  #deux{
+  #deux {
     height: 216px;
     margin-bottom: 20px;
   }
-  #trois{
+  #trois {
     height: 212px;
     margin-bottom: 20px;
   }
-  #quatre{
+  #quatre {
     height: 198px;
     margin-bottom: 20px;
   }
-  #cinq{
+  #cinq {
     height: 210px;
     margin-bottom: 20px;
   }
-  #six{
+  #six {
     height: 207px;
     margin-bottom: 20px;
   }
@@ -709,12 +704,11 @@ transition-duration: 0.1s;
 /*responsive mobile activite*/
 
 @media screen and (max-width: 375px) {
-  .activites{
+  .activites {
     display: flex;
     flex-direction: column;
-    
   }
-  .activites h2{
+  .activites h2 {
     margin-left: 40px;
     margin-bottom: 65px;
   }
@@ -731,48 +725,49 @@ transition-duration: 0.1s;
     width: 454px;
     height: 226px;
   }
-  #un{
+  #un {
     width: 90%;
     max-width: 100%;
     margin-left: 92px;
     height: 530px;
     margin-bottom: 50px;
   }
-  #deux{
-    width: 90%;
-    max-width: 100%;
-    margin-left: 92px;
-    height: 530px;
-    margin-bottom: 50px;
-  } #trois{
+  #deux {
     width: 90%;
     max-width: 100%;
     margin-left: 92px;
     height: 530px;
     margin-bottom: 50px;
   }
-  #quatre{
+  #trois {
     width: 90%;
     max-width: 100%;
     margin-left: 92px;
     height: 530px;
     margin-bottom: 50px;
   }
-  #cinq{
+  #quatre {
     width: 90%;
     max-width: 100%;
     margin-left: 92px;
     height: 530px;
     margin-bottom: 50px;
   }
-  #six{
+  #cinq {
     width: 90%;
     max-width: 100%;
     margin-left: 92px;
     height: 530px;
     margin-bottom: 50px;
   }
-}  
+  #six {
+    width: 90%;
+    max-width: 100%;
+    margin-left: 92px;
+    height: 530px;
+    margin-bottom: 50px;
+  }
+}
 
 /*Footer*/
 
@@ -781,14 +776,15 @@ footer {
   padding-top: 40px;
   background: #f2f2f2;
 }
-.footer{
+.footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 20px;
 }
-main, .footer {
+main,
+.footer {
   max-width: 1170px;
   margin: auto;
 }
@@ -807,7 +803,7 @@ footer li {
 footer ul li {
   margin: 10px 0;
 }
-.bloc3{
+.bloc3 {
   margin-right: 400px;
   margin-bottom: 70px;
 }
@@ -815,22 +811,22 @@ footer ul li {
 /*Responsive tablette footer */
 
 @media screen and (max-width: 768px) {
-  footer{
+  footer {
     margin-left: 53px;
   }
-  .footer{
-   flex-flow: row;
-   width: 1079px;
+  .footer {
+    flex-flow: row;
+    width: 1079px;
   }
-  .bloc1{
+  .bloc1 {
     width: 362px;
     margin-left: 40px;
   }
-  .bloc2{
+  .bloc2 {
     width: 264px;
     margin-left: 40px;
   }
-  .bloc3{
+  .bloc3 {
     width: 205px;
     margin-left: 40px;
   }
@@ -839,16 +835,16 @@ footer ul li {
 /*Responsive mobile footer */
 
 @media screen and (max-width: 375px) {
-  footer{
+  footer {
     width: 120%;
     margin-left: -60px;
   }
-  .footer{
+  .footer {
     display: block;
     margin-left: 70px;
     font-size: 20px;
   }
- 
+
   .bloc1 h3 {
     font-size: 60px;
     margin-bottom: 60px;
@@ -861,21 +857,21 @@ footer ul li {
     font-size: 60px;
     margin-bottom: 60px;
   }
-  .bloc1{
+  .bloc1 {
     font-size: 55px;
     height: 347px;
     width: 1027px;
     margin-bottom: 80px;
     margin-left: 120px;
   }
-  .bloc2{
+  .bloc2 {
     font-size: 56px;
     width: 1034px;
     margin-bottom: 80px;
     height: 300px;
     margin-left: 120px;
   }
-  .bloc3{
+  .bloc3 {
     font-size: 56px;
     height: 248px;
     width: 1034px;
@@ -890,14 +886,4 @@ footer ul li {
   .bloc3 li {
     margin-bottom: 61px;
   }
-}  
-/*Media queries */
-
-/*header*/
-/* barre de navigation*/
-/*Recherche*/ 
-/*Filtres*/
-/*hébergements*/
-/*Populaires*/
-/* activités */
-/*footer*/
+}
